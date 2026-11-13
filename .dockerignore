@@ -1,0 +1,27 @@
+# Keep the Docker build context small.
+# Only files actually used by the Dockerfile stages are needed.
+
+# Frontend — exclude everything except source and config
+frontend/node_modules/
+frontend/.angular/
+frontend/dist/
+frontend/.vscode/
+
+# Backend — exclude compiled output (Maven rebuilds from source)
+backend/target/
+
+# Root artefacts not needed in the image
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.git/
+.gitignore
+docs/
+bob_usage/
+reference/
+schema.sql
+README*.md
+AGENTS.md
+HANDOFF_INDEX.md
