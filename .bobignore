@@ -1,0 +1,6 @@
+# Keep secrets out of Bob's reach
+.env
+.env.*
+!.env.example
+*.pem
+*.key

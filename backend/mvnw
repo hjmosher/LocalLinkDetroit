@@ -1,0 +1,22 @@
+#!/bin/sh
+# Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.
+# Maven Wrapper script for Unix/Mac. Do not edit — regenerate with: mvn wrapper:wrapper
+
+set -e
+
+# Detect JAVA_HOME
+if [ -n "$JAVA_HOME" ]; then
+  JAVACMD="$JAVA_HOME/bin/java"
+else
+  JAVACMD="java"
+fi
+
+# Locate wrapper jar
+WRAPPER_JAR=".mvn/wrapper/maven-wrapper.jar"
+WRAPPER_PROPERTIES=".mvn/wrapper/maven-wrapper.properties"
+
+# Download Maven if not cached
+exec "$JAVACMD" \
+  -classpath "$WRAPPER_JAR" \
+  org.apache.maven.wrapper.MavenWrapperMain \
+  "$@"

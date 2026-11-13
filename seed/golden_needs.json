@@ -1,0 +1,77 @@
+{
+  "note": "Golden inputs for testing need decomposition and matching. expected_core are skills a correct decomposition must include; expected_optional are acceptable extras; should_not_include are skills a correct decomposition must NOT return (the owner describes their own trade, not a need for it).",
+  "needs": [
+    {
+      "id": "need-1",
+      "persona": "General contractor, Royal Oak",
+      "city": "Royal Oak",
+      "text": "I'm a general contractor building a 400 sq ft deck with a retaining wall for a homeowner in Royal Oak. I need someone to pour concrete footings, someone to frame the deck, and an electrician for deck lighting. Work starts in about three weeks.",
+      "expected_core": [
+        "concrete",
+        "framing",
+        "electrical"
+      ],
+      "expected_optional": [
+        "excavation",
+        "masonry_retaining",
+        "permit_compliance_admin"
+      ]
+    },
+    {
+      "id": "need-2",
+      "persona": "Landscaper, Ann Arbor",
+      "city": "Ann Arbor",
+      "text": "I run a landscaping company with six crew members in Ann Arbor. I'm buried in weekly invoicing, chasing late payments, scheduling crews and doing payroll. I'd rather spend my time on the work itself.",
+      "expected_core": [
+        "invoicing_collections",
+        "scheduling_dispatch",
+        "payroll"
+      ],
+      "expected_optional": [
+        "bookkeeping",
+        "fractional_ops"
+      ],
+      "should_not_include": [
+        "landscaping_hardscape"
+      ]
+    },
+    {
+      "id": "need-3",
+      "persona": "Cafe owner, Detroit",
+      "city": "Detroit",
+      "text": "I'm opening a cafe in Corktown in about two months. I need help with the permit and licensing paperwork, the paperwork for hiring my first employees, and a simple website.",
+      "expected_core": [
+        "permit_compliance_admin",
+        "hr_compliance",
+        "marketing_web"
+      ],
+      "expected_optional": [
+        "insurance_bonding"
+      ]
+    },
+    {
+      "id": "need-4",
+      "persona": "Contractor needing a roofer, Livonia (trust-warning demo)",
+      "city": "Livonia",
+      "text": "My crew is booked solid and I need a roofing subcontractor to re-roof a detached garage in Livonia within the next few weeks.",
+      "expected_core": [
+        "roofing"
+      ],
+      "expected_optional": [
+        "demolition_hauling"
+      ]
+    },
+    {
+      "id": "need-5",
+      "persona": "Contractor needing an electrician, Ann Arbor (unverified-license demo)",
+      "city": "Ann Arbor",
+      "text": "I'm finishing a garage conversion in Ann Arbor and need an electrician to run new circuits and install exterior lighting this month.",
+      "expected_core": [
+        "electrical"
+      ],
+      "expected_optional": [
+        "permit_compliance_admin"
+      ]
+    }
+  ]
+}

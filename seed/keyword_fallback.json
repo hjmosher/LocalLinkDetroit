@@ -1,0 +1,29 @@
+{
+  "note": "Used by the mock/fallback decomposer. Lowercase the description, count keyword hits per skill, return the top skills (max 5) with a reason such as: Mentions 'footings'. Must satisfy every expected_core skill in golden_needs.json.",
+  "keywords": {
+    "concrete": ["concrete", "footing", "footings", "slab", "flatwork", "pour"],
+    "excavation": ["excavat", "grading", "trench", "dig ", "site prep"],
+    "framing": ["framing", "frame ", "carpent", "deck", "joist"],
+    "roofing": ["roof", "re-roof", "shingle"],
+    "masonry_retaining": ["masonry", "retaining wall", "brick", "block wall", "stone wall"],
+    "drywall_painting": ["drywall", "painting", "paint ", "painter"],
+    "electrical": ["electric", "wiring", "rewire", "circuit", "lighting", "panel"],
+    "plumbing": ["plumb", "pipe", "water heater", "drain"],
+    "hvac": ["hvac", "furnace", "heating", "air conditioning", "ductwork"],
+    "landscaping_hardscape": ["patio", "walkway", "hardscape", "planting", "sod ", "mulch"],
+    "demolition_hauling": ["demolition", "demo ", "haul", "dumpster", "cleanout"],
+    "surveying": ["survey", "boundary", "property line"],
+    "estimating": ["estimate", "estimating", "bid ", "takeoff"],
+    "bookkeeping": ["bookkeep", "books", "accounting", "reconcil"],
+    "payroll": ["payroll", "paychecks", "pay my crew"],
+    "tax_prep": ["tax prep", "tax return", "taxes", "cpa"],
+    "hr_compliance": ["hiring", "hire", "employee paperwork", "onboarding", "handbook", "w-4", "i-9"],
+    "scheduling_dispatch": ["scheduling", "schedule crews", "dispatch", "route"],
+    "fractional_ops": ["operations manager", "run operations", "operations help", "ops person"],
+    "invoicing_collections": ["invoic", "late payment", "collections", "chasing payment", "receivable"],
+    "permit_compliance_admin": ["permit", "licensing paperwork", "license paperwork", "licensing", "compliance paperwork"],
+    "insurance_bonding": ["insurance", "bonding", "bonded", "workers comp"],
+    "marketing_web": ["website", "web site", "marketing", "online presence", "google listing"],
+    "admin_support": ["admin", "assistant", "answer phones", "customer follow-up", "data entry"]
+  }
+}

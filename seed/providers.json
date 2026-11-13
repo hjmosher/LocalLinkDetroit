@@ -1,0 +1,558 @@
+{
+  "note": "ALL BUSINESSES ARE FICTIONAL. Names are invented for a hackathon demo; any match to a real business is coincidence. lara_status and license flags are simulated, not read from any registry.",
+  "cities": {
+    "Detroit": {
+      "lat": 42.3314,
+      "lon": -83.0458
+    },
+    "Warren": {
+      "lat": 42.5145,
+      "lon": -83.0147
+    },
+    "Pontiac": {
+      "lat": 42.6389,
+      "lon": -83.291
+    },
+    "Royal Oak": {
+      "lat": 42.4895,
+      "lon": -83.1446
+    },
+    "Dearborn": {
+      "lat": 42.3223,
+      "lon": -83.1763
+    },
+    "Livonia": {
+      "lat": 42.3684,
+      "lon": -83.3527
+    },
+    "Hamtramck": {
+      "lat": 42.3928,
+      "lon": -83.0497
+    },
+    "Ann Arbor": {
+      "lat": 42.2808,
+      "lon": -83.743
+    },
+    "Troy": {
+      "lat": 42.6064,
+      "lon": -83.1498
+    },
+    "Southfield": {
+      "lat": 42.4734,
+      "lon": -83.2219
+    },
+    "Lansing": {
+      "lat": 42.7325,
+      "lon": -84.5555
+    },
+    "Grand Rapids": {
+      "lat": 42.9634,
+      "lon": -85.6681
+    }
+  },
+  "providers": [
+    {
+      "id": "demo-001",
+      "name": "Marrow & Finch Concrete LLC",
+      "fictional": true,
+      "structure": "llc",
+      "city": "Warren",
+      "lat": 42.5125,
+      "lon": -83.0121,
+      "service_radius_miles": 30,
+      "skills": [
+        "concrete",
+        "excavation"
+      ],
+      "summary": "Footings, slabs and flatwork for residential and light commercial jobs.",
+      "lara_status": "active_good_standing",
+      "licenses": [],
+      "availability": "this_month"
+    },
+    {
+      "id": "demo-002",
+      "name": "Tallgrass Excavation Co.",
+      "fictional": true,
+      "structure": "corp",
+      "city": "Pontiac",
+      "lat": 42.6449,
+      "lon": -83.2988,
+      "service_radius_miles": 40,
+      "skills": [
+        "excavation",
+        "demolition_hauling"
+      ],
+      "summary": "Grading, trenching and site prep with its own equipment.",
+      "lara_status": "active_good_standing",
+      "licenses": [],
+      "availability": "next_month"
+    },
+    {
+      "id": "demo-003",
+      "name": "R. Okafor Carpentry",
+      "fictional": true,
+      "structure": "sole_prop",
+      "city": "Royal Oak",
+      "lat": 42.4815,
+      "lon": -83.1342,
+      "service_radius_miles": 20,
+      "skills": [
+        "framing",
+        "drywall_painting"
+      ],
+      "summary": "Solo carpenter: decks, framing and finish carpentry.",
+      "lara_status": "not_applicable",
+      "licenses": [],
+      "availability": "this_month"
+    },
+    {
+      "id": "demo-004",
+      "name": "Brightline Electric LLC",
+      "fictional": true,
+      "structure": "llc",
+      "city": "Detroit",
+      "lat": 42.3314,
+      "lon": -83.0458,
+      "service_radius_miles": 35,
+      "skills": [
+        "electrical"
+      ],
+      "summary": "Residential and small commercial electrical, including lighting and panel upgrades.",
+      "lara_status": "active_good_standing",
+      "licenses": [
+        {
+          "type": "Electrical contractor (state)",
+          "skills": [
+            "electrical"
+          ],
+          "state_verified": true
+        }
+      ],
+      "availability": "next_month"
+    },
+    {
+      "id": "demo-005",
+      "name": "Lakeshore Plumbing & Heating Inc.",
+      "fictional": true,
+      "structure": "corp",
+      "city": "Dearborn",
+      "lat": 42.3303,
+      "lon": -83.1867,
+      "service_radius_miles": 30,
+      "skills": [
+        "plumbing",
+        "hvac"
+      ],
+      "summary": "Plumbing repair and install, furnace and AC service.",
+      "lara_status": "active_good_standing",
+      "licenses": [
+        {
+          "type": "Plumbing contractor (state)",
+          "skills": [
+            "plumbing"
+          ],
+          "state_verified": true
+        },
+        {
+          "type": "Mechanical contractor (state)",
+          "skills": [
+            "hvac"
+          ],
+          "state_verified": true
+        }
+      ],
+      "availability": "flexible"
+    },
+    {
+      "id": "demo-006",
+      "name": "Cedar Row Roofing LLC",
+      "fictional": true,
+      "structure": "llc",
+      "city": "Livonia",
+      "lat": 42.3624,
+      "lon": -83.3449,
+      "service_radius_miles": 35,
+      "skills": [
+        "roofing"
+      ],
+      "summary": "Shingle and flat roof installation and repair.",
+      "lara_status": "not_in_good_standing",
+      "licenses": [],
+      "availability": "this_month"
+    },
+    {
+      "id": "demo-007",
+      "name": "Hamtramck Hand Painting",
+      "fictional": true,
+      "structure": "sole_prop",
+      "city": "Hamtramck",
+      "lat": 42.3948,
+      "lon": -83.0523,
+      "service_radius_miles": 15,
+      "skills": [
+        "drywall_painting"
+      ],
+      "summary": "Interior painting and drywall repair.",
+      "lara_status": "not_applicable",
+      "licenses": [],
+      "availability": "this_month"
+    },
+    {
+      "id": "demo-008",
+      "name": "Greenfield Hardscapes LLC",
+      "fictional": true,
+      "structure": "llc",
+      "city": "Ann Arbor",
+      "lat": 42.2908,
+      "lon": -83.756,
+      "service_radius_miles": 40,
+      "skills": [
+        "landscaping_hardscape",
+        "masonry_retaining"
+      ],
+      "summary": "Patios, walkways, retaining walls and planting.",
+      "lara_status": "active_good_standing",
+      "licenses": [],
+      "availability": "next_month"
+    },
+    {
+      "id": "demo-009",
+      "name": "Eastside Masonry",
+      "fictional": true,
+      "structure": "sole_prop",
+      "city": "Detroit",
+      "lat": 42.3274,
+      "lon": -83.0406,
+      "service_radius_miles": 25,
+      "skills": [
+        "masonry_retaining",
+        "concrete"
+      ],
+      "summary": "Brick, block and retaining walls.",
+      "lara_status": "not_applicable",
+      "licenses": [],
+      "availability": "flexible"
+    },
+    {
+      "id": "demo-010",
+      "name": "Corktown Haul & Demo LLC",
+      "fictional": true,
+      "structure": "llc",
+      "city": "Detroit",
+      "lat": 42.3354,
+      "lon": -83.051,
+      "service_radius_miles": 30,
+      "skills": [
+        "demolition_hauling"
+      ],
+      "summary": "Small demolition, cleanouts and dumpster hauling.",
+      "lara_status": "active_good_standing",
+      "licenses": [],
+      "availability": "this_month"
+    },
+    {
+      "id": "demo-011",
+      "name": "Meridian Survey Services",
+      "fictional": true,
+      "structure": "sole_prop",
+      "city": "Troy",
+      "lat": 42.5964,
+      "lon": -83.1368,
+      "service_radius_miles": 50,
+      "skills": [
+        "surveying"
+      ],
+      "summary": "Boundary and site surveys.",
+      "lara_status": "not_applicable",
+      "licenses": [
+        {
+          "type": "Professional surveyor (state)",
+          "skills": [
+            "surveying"
+          ],
+          "state_verified": true
+        }
+      ],
+      "availability": "next_month"
+    },
+    {
+      "id": "demo-012",
+      "name": "Thornbury Estimating",
+      "fictional": true,
+      "structure": "sole_prop",
+      "city": "Warren",
+      "lat": 42.5125,
+      "lon": -83.0121,
+      "service_radius_miles": 60,
+      "skills": [
+        "estimating",
+        "permit_compliance_admin"
+      ],
+      "summary": "Takeoffs and bid packages for small contractors.",
+      "lara_status": "not_applicable",
+      "licenses": [],
+      "availability": "this_month"
+    },
+    {
+      "id": "demo-013",
+      "name": "Ledger Lane Bookkeeping",
+      "fictional": true,
+      "structure": "sole_prop",
+      "city": "Royal Oak",
+      "lat": 42.4955,
+      "lon": -83.1524,
+      "service_radius_miles": 40,
+      "skills": [
+        "bookkeeping",
+        "payroll",
+        "invoicing_collections"
+      ],
+      "summary": "Monthly bookkeeping and payroll for service businesses.",
+      "lara_status": "not_applicable",
+      "licenses": [],
+      "availability": "this_month"
+    },
+    {
+      "id": "demo-014",
+      "name": "Ironwood Operations Partners LLC",
+      "fictional": true,
+      "structure": "llc",
+      "city": "Detroit",
+      "lat": 42.3234,
+      "lon": -83.0354,
+      "service_radius_miles": 50,
+      "skills": [
+        "scheduling_dispatch",
+        "fractional_ops"
+      ],
+      "summary": "Fractional operations managers for crews and field-service teams.",
+      "lara_status": "active_good_standing",
+      "licenses": [],
+      "availability": "this_month"
+    },
+    {
+      "id": "demo-015",
+      "name": "Northfield HR Support LLC",
+      "fictional": true,
+      "structure": "llc",
+      "city": "Southfield",
+      "lat": 42.4734,
+      "lon": -83.2219,
+      "service_radius_miles": 45,
+      "skills": [
+        "hr_compliance",
+        "payroll"
+      ],
+      "summary": "Hiring paperwork, handbooks and compliance checklists for small teams.",
+      "lara_status": "active_good_standing",
+      "licenses": [],
+      "availability": "next_month"
+    },
+    {
+      "id": "demo-016",
+      "name": "Cobalt Collections Co.",
+      "fictional": true,
+      "structure": "sole_prop",
+      "city": "Ann Arbor",
+      "lat": 42.2888,
+      "lon": -83.7534,
+      "service_radius_miles": 40,
+      "skills": [
+        "invoicing_collections",
+        "bookkeeping"
+      ],
+      "summary": "Invoice follow-up and receivables tracking.",
+      "lara_status": "not_applicable",
+      "licenses": [],
+      "availability": "flexible"
+    },
+    {
+      "id": "demo-017",
+      "name": "Permit Pilot LLC",
+      "fictional": true,
+      "structure": "llc",
+      "city": "Detroit",
+      "lat": 42.3254,
+      "lon": -83.038,
+      "service_radius_miles": 40,
+      "skills": [
+        "permit_compliance_admin"
+      ],
+      "summary": "Gathers documents and tracks city and state licensing and permit applications.",
+      "lara_status": "active_good_standing",
+      "licenses": [],
+      "availability": "this_month"
+    },
+    {
+      "id": "demo-018",
+      "name": "Harbor & Pike CPA LLC",
+      "fictional": true,
+      "structure": "llc",
+      "city": "Troy",
+      "lat": 42.6084,
+      "lon": -83.1524,
+      "service_radius_miles": 50,
+      "skills": [
+        "tax_prep",
+        "bookkeeping"
+      ],
+      "summary": "Small-business tax prep and bookkeeping.",
+      "lara_status": "active_good_standing",
+      "licenses": [
+        {
+          "type": "Certified public accountant (state)",
+          "skills": [
+            "tax_prep"
+          ],
+          "state_verified": true
+        }
+      ],
+      "availability": "next_month"
+    },
+    {
+      "id": "demo-019",
+      "name": "Wayfinder Web & Marketing",
+      "fictional": true,
+      "structure": "sole_prop",
+      "city": "Dearborn",
+      "lat": 42.3323,
+      "lon": -83.1893,
+      "service_radius_miles": 50,
+      "skills": [
+        "marketing_web"
+      ],
+      "summary": "Simple websites and local search setup for small businesses.",
+      "lara_status": "not_applicable",
+      "licenses": [],
+      "availability": "this_month"
+    },
+    {
+      "id": "demo-020",
+      "name": "Dispatch Desk Virtual Assistants",
+      "fictional": true,
+      "structure": "sole_prop",
+      "city": "Lansing",
+      "lat": 42.7285,
+      "lon": -84.5503,
+      "service_radius_miles": 25,
+      "skills": [
+        "admin_support",
+        "scheduling_dispatch"
+      ],
+      "summary": "Remote scheduling and customer follow-up.",
+      "lara_status": "not_applicable",
+      "licenses": [],
+      "availability": "flexible"
+    },
+    {
+      "id": "demo-021",
+      "name": "Keystone Insurance & Bonding LLC",
+      "fictional": true,
+      "structure": "llc",
+      "city": "Livonia",
+      "lat": 42.3724,
+      "lon": -83.3579,
+      "service_radius_miles": 40,
+      "skills": [
+        "insurance_bonding"
+      ],
+      "summary": "Liability, workers comp and bonding for contractors and shops.",
+      "lara_status": "active_good_standing",
+      "licenses": [
+        {
+          "type": "Insurance producer (state)",
+          "skills": [
+            "insurance_bonding"
+          ],
+          "state_verified": true
+        }
+      ],
+      "availability": "flexible"
+    },
+    {
+      "id": "demo-022",
+      "name": "Riverbend Bookkeeping LLC",
+      "fictional": true,
+      "structure": "llc",
+      "city": "Grand Rapids",
+      "lat": 42.9534,
+      "lon": -85.6551,
+      "service_radius_miles": 100,
+      "skills": [
+        "bookkeeping",
+        "payroll"
+      ],
+      "summary": "Bookkeeping and payroll for west Michigan businesses.",
+      "lara_status": "active_good_standing",
+      "licenses": [],
+      "availability": "flexible"
+    },
+    {
+      "id": "demo-023",
+      "name": "Sparkplug Electric",
+      "fictional": true,
+      "structure": "sole_prop",
+      "city": "Ann Arbor",
+      "lat": 42.2788,
+      "lon": -83.7404,
+      "service_radius_miles": 30,
+      "skills": [
+        "electrical"
+      ],
+      "summary": "Solo electrician for residential service calls.",
+      "lara_status": "not_applicable",
+      "licenses": [
+        {
+          "type": "Electrical contractor (state)",
+          "skills": [
+            "electrical"
+          ],
+          "state_verified": false
+        }
+      ],
+      "availability": "this_month"
+    },
+    {
+      "id": "demo-024",
+      "name": "Lumen Light & Power Inc.",
+      "fictional": true,
+      "structure": "corp",
+      "city": "Southfield",
+      "lat": 42.4794,
+      "lon": -83.2297,
+      "service_radius_miles": 35,
+      "skills": [
+        "electrical"
+      ],
+      "summary": "Commercial and residential lighting and power.",
+      "lara_status": "active_good_standing",
+      "licenses": [
+        {
+          "type": "Electrical contractor (state)",
+          "skills": [
+            "electrical"
+          ],
+          "state_verified": true
+        }
+      ],
+      "availability": "this_month"
+    },
+    {
+      "id": "demo-025",
+      "name": "Redwood Deck & Frame LLC",
+      "fictional": true,
+      "structure": "llc",
+      "city": "Troy",
+      "lat": 42.5984,
+      "lon": -83.1394,
+      "service_radius_miles": 35,
+      "skills": [
+        "framing"
+      ],
+      "summary": "Decks, porches and structural framing.",
+      "lara_status": "active_good_standing",
+      "licenses": [],
+      "availability": "next_month"
+    }
+  ]
+}

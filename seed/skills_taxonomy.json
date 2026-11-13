@@ -1,0 +1,149 @@
+{
+  "note": "Fixed skill list the AI may map needs onto. regulated_hint means work in this category MAY require a state license; the app flags it and links to the state license lookup. It never decides whether a license is required.",
+  "skills": [
+    {
+      "id": "concrete",
+      "label": "Concrete footings and flatwork",
+      "group": "construction",
+      "regulated_hint": false
+    },
+    {
+      "id": "excavation",
+      "label": "Excavation and grading",
+      "group": "construction",
+      "regulated_hint": false
+    },
+    {
+      "id": "framing",
+      "label": "Framing and carpentry",
+      "group": "construction",
+      "regulated_hint": false
+    },
+    {
+      "id": "roofing",
+      "label": "Roofing",
+      "group": "construction",
+      "regulated_hint": true
+    },
+    {
+      "id": "masonry_retaining",
+      "label": "Masonry and retaining walls",
+      "group": "construction",
+      "regulated_hint": false
+    },
+    {
+      "id": "drywall_painting",
+      "label": "Drywall and painting",
+      "group": "construction",
+      "regulated_hint": false
+    },
+    {
+      "id": "electrical",
+      "label": "Electrical",
+      "group": "construction",
+      "regulated_hint": true
+    },
+    {
+      "id": "plumbing",
+      "label": "Plumbing",
+      "group": "construction",
+      "regulated_hint": true
+    },
+    {
+      "id": "hvac",
+      "label": "Heating and cooling (HVAC)",
+      "group": "construction",
+      "regulated_hint": true
+    },
+    {
+      "id": "landscaping_hardscape",
+      "label": "Landscaping and hardscape",
+      "group": "construction",
+      "regulated_hint": false
+    },
+    {
+      "id": "demolition_hauling",
+      "label": "Demolition and hauling",
+      "group": "construction",
+      "regulated_hint": false
+    },
+    {
+      "id": "surveying",
+      "label": "Land surveying",
+      "group": "construction",
+      "regulated_hint": true
+    },
+    {
+      "id": "estimating",
+      "label": "Estimating and bid preparation",
+      "group": "construction",
+      "regulated_hint": false
+    },
+    {
+      "id": "bookkeeping",
+      "label": "Bookkeeping",
+      "group": "operations",
+      "regulated_hint": false
+    },
+    {
+      "id": "payroll",
+      "label": "Payroll",
+      "group": "operations",
+      "regulated_hint": false
+    },
+    {
+      "id": "tax_prep",
+      "label": "Tax preparation",
+      "group": "operations",
+      "regulated_hint": true
+    },
+    {
+      "id": "hr_compliance",
+      "label": "HR and hiring paperwork",
+      "group": "operations",
+      "regulated_hint": false
+    },
+    {
+      "id": "scheduling_dispatch",
+      "label": "Scheduling and dispatch",
+      "group": "operations",
+      "regulated_hint": false
+    },
+    {
+      "id": "fractional_ops",
+      "label": "Fractional operations manager",
+      "group": "operations",
+      "regulated_hint": false
+    },
+    {
+      "id": "invoicing_collections",
+      "label": "Invoicing and collections",
+      "group": "operations",
+      "regulated_hint": false
+    },
+    {
+      "id": "permit_compliance_admin",
+      "label": "Permit and licensing paperwork",
+      "group": "operations",
+      "regulated_hint": false
+    },
+    {
+      "id": "insurance_bonding",
+      "label": "Insurance and bonding",
+      "group": "operations",
+      "regulated_hint": true
+    },
+    {
+      "id": "marketing_web",
+      "label": "Website and local marketing",
+      "group": "operations",
+      "regulated_hint": false
+    },
+    {
+      "id": "admin_support",
+      "label": "Administrative support",
+      "group": "operations",
+      "regulated_hint": false
+    }
+  ]
+}
