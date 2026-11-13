@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatchResponse, Tier, Structure, Availability, ProviderMatch } from '../models';
+import { MatchResponse, Tier, Structure, Availability } from '../models';
 
 export interface DraftIntroRequest {
   providerId: string;

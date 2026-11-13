@@ -3,7 +3,6 @@ import {
   EventEmitter,
   Input,
   Output,
-  OnInit,
   OnDestroy,
   ElementRef,
   AfterViewInit,
