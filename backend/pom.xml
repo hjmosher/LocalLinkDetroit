@@ -51,6 +51,13 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+    <!-- WireMock for stubbed HTTP in unit tests (no real network) -->
+    <dependency>
+      <groupId>org.wiremock</groupId>
+      <artifactId>wiremock-standalone</artifactId>
+      <version>3.9.1</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
