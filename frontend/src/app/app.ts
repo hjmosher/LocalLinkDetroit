@@ -27,9 +27,10 @@ type AppState = 'post-need' | 'review-skills' | 'matches';
     IntroDialogComponent,
   ],
   template: `
-    <!-- Demo-data banner (always visible, every screen) -->
-    <div class="demo-banner" role="banner">
-      <span>⚠ Demo data: all businesses are fictional. Trust badges are simulated. For demonstration purposes only.</span>
+    <!-- Demo-data banner (always visible on every screen, per spec) -->
+    <div class="demo-banner" role="banner" aria-label="Demo data notice">
+      <span aria-hidden="true">⚠</span>
+      <span>Demo data: all businesses are fictional. Trust flags are simulated.</span>
     </div>
 
     <div class="app-shell">

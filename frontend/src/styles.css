@@ -24,3 +24,19 @@ a:hover {
 button, select, textarea, input {
   font-family: inherit;
 }
+
+/*
+ * Accessible focus styles — keyboard-only via :focus-visible.
+ * Individual components add more specific overrides where needed.
+ * Never suppress outlines for keyboard users.
+ */
+:focus-visible {
+  outline: 2px solid #3b82d4;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Remove the default blue glow on click (mouse) only */
+:focus:not(:focus-visible) {
+  outline: none;
+}
