@@ -12,6 +12,7 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -143,7 +144,11 @@ public class WatsonxGraniteClient implements GraniteClient {
      */
     @Override
     public ExplainResponse explain(ExplainContext ctx) {
-        String cacheKey = ctx.skillLabel() + "|" + ctx.providerName() + "|" + ctx.distanceMiles();
+        // Include badges and warnings in the key: a provider's trust facts can differ
+        // across skills, so a stale cached sentence must never contradict current facts.
+        String cacheKey = ctx.skillLabel() + "|" + ctx.providerName() + "|" + ctx.distanceMiles()
+                + "|" + ctx.badges()
+                + "|" + ctx.warnings();
 
         ExplainResponse cached = explainCache.get(cacheKey);
         if (cached != null) {
@@ -186,16 +191,13 @@ public class WatsonxGraniteClient implements GraniteClient {
      */
     @Override
     public IntroResponse draftIntro(IntroRequest request) {
-        String providerSummary = store.providers().stream()
+        // Single lookup — avoid iterating the provider list twice
+        com.locallink.model.Provider provider = store.providers().stream()
                 .filter(p -> p.id().equals(request.providerId()))
-                .map(com.locallink.model.Provider::summary)
                 .findFirst()
-                .orElse("");
-        String providerName = store.providers().stream()
-                .filter(p -> p.id().equals(request.providerId()))
-                .map(com.locallink.model.Provider::name)
-                .findFirst()
-                .orElse("the provider");
+                .orElse(null);
+        String providerName    = provider != null ? provider.name()    : "the provider";
+        String providerSummary = provider != null ? provider.summary() : "";
         String skillLabel = store.skill(request.skillId())
                 .map(Skill::label)
                 .orElse(request.skillId());
@@ -251,8 +253,11 @@ public class WatsonxGraniteClient implements GraniteClient {
         }
 
         String url = watsonxUrl + GENERATION_PATH;
+        // 15 s per call: enough for Granite at temperature 0, short prompts.
+        // Ensures the fallback runs instead of parking the thread indefinitely.
         HttpRequest req = HttpRequest.newBuilder()
                 .uri(URI.create(url))
+                .timeout(Duration.ofSeconds(15))
                 .header("Content-Type", "application/json")
                 .header("Accept", "application/json")
                 .header("Authorization", "Bearer " + token)

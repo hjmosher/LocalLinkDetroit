@@ -12,6 +12,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
+import java.time.Duration;
 import java.time.Instant;
 
 /**
@@ -76,6 +77,7 @@ public class IamTokenService {
 
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(IAM_TOKEN_URL))
+                .timeout(Duration.ofSeconds(10))
                 .header("Content-Type", "application/x-www-form-urlencoded")
                 .header("Accept", "application/json")
                 .POST(HttpRequest.BodyPublishers.ofString(formBody))
